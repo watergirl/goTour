@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WHCell" id="gTV-IL-0wX" customClass="WHHotelCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="130"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="picholder.png" translatesAutoresizingMaskIntoConstraints="NO" id="yrs-eU-hDA">
+                        <rect key="frame" x="0.0" y="0.0" width="138" height="130"/>
+                        <animations/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4hY-Ec-dWG">
+                        <rect key="frame" x="8" y="8" width="122" height="114"/>
+                        <animations/>
+                    </imageView>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="yrs-eU-hDA" secondAttribute="bottom" id="99a-Gd-iI3"/>
+                <constraint firstItem="yrs-eU-hDA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="9Xl-GJ-0aA"/>
+                <constraint firstAttribute="trailing" secondItem="yrs-eU-hDA" secondAttribute="trailing" id="GOf-Uu-ZOi"/>
+                <constraint firstAttribute="bottom" secondItem="4hY-Ec-dWG" secondAttribute="bottom" constant="8" id="VcP-WX-oJ2"/>
+                <constraint firstItem="yrs-eU-hDA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dMC-t2-DRy"/>
+                <constraint firstAttribute="trailing" secondItem="4hY-Ec-dWG" secondAttribute="trailing" constant="8" id="fLR-dp-g8l"/>
+                <constraint firstItem="4hY-Ec-dWG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="hmv-lq-xdc"/>
+                <constraint firstItem="4hY-Ec-dWG" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="vSJ-ir-4up"/>
+            </constraints>
+            <size key="customSize" width="138" height="130"/>
+            <connections>
+                <outlet property="hotelPic" destination="4hY-Ec-dWG" id="KI2-dY-jsy"/>
+            </connections>
+            <point key="canvasLocation" x="282" y="308"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="picholder.png" width="87" height="130"/>
+    </resources>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="tripCell" id="gTV-IL-0wX" customClass="HTTripCell">
+            <rect key="frame" x="0.0" y="0.0" width="185" height="163"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="185" height="163"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="m2O-J8-Tyj" userLabel="contentView">
+                        <rect key="frame" x="0.0" y="0.0" width="185" height="163"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zhanweitu.png" translatesAutoresizingMaskIntoConstraints="NO" id="90T-Vo-FQq">
+                                <rect key="frame" x="0.0" y="0.0" width="185" height="163"/>
+                                <animations/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name_ch" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dqS-WR-qgO">
+                                <rect key="frame" x="5" y="101" width="175" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name_en" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tlr-Pc-dil">
+                                <rect key="frame" x="5" y="132" width="175" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.98039215686274506" green="0.96078431372549022" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dqS-WR-qgO" firstAttribute="leading" secondItem="m2O-J8-Tyj" secondAttribute="leading" constant="5" id="0UF-dM-0rE"/>
+                            <constraint firstItem="Tlr-Pc-dil" firstAttribute="leading" secondItem="m2O-J8-Tyj" secondAttribute="leading" constant="5" id="GXn-vf-Afz"/>
+                            <constraint firstItem="Tlr-Pc-dil" firstAttribute="top" secondItem="dqS-WR-qgO" secondAttribute="bottom" constant="10" id="H0W-9u-9XB"/>
+                            <constraint firstItem="Tlr-Pc-dil" firstAttribute="top" secondItem="dqS-WR-qgO" secondAttribute="bottom" constant="10" id="NxD-NH-Vhl"/>
+                            <constraint firstAttribute="trailing" secondItem="dqS-WR-qgO" secondAttribute="trailing" constant="5" id="apf-Yg-bmJ"/>
+                            <constraint firstAttribute="trailing" secondItem="Tlr-Pc-dil" secondAttribute="trailing" constant="5" id="h8w-tC-cT9"/>
+                            <constraint firstItem="90T-Vo-FQq" firstAttribute="leading" secondItem="m2O-J8-Tyj" secondAttribute="leading" id="iXz-Je-TnU"/>
+                            <constraint firstAttribute="bottom" secondItem="Tlr-Pc-dil" secondAttribute="bottom" constant="10" id="ihW-Tu-gIA"/>
+                            <constraint firstAttribute="trailing" secondItem="90T-Vo-FQq" secondAttribute="trailing" id="nU5-FY-px7"/>
+                            <constraint firstAttribute="bottom" secondItem="90T-Vo-FQq" secondAttribute="bottom" id="nyy-mq-p78"/>
+                            <constraint firstItem="90T-Vo-FQq" firstAttribute="top" secondItem="m2O-J8-Tyj" secondAttribute="top" id="vsj-JI-fUl"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstItem="m2O-J8-Tyj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NcC-Fr-VXm"/>
+                <constraint firstAttribute="trailing" secondItem="m2O-J8-Tyj" secondAttribute="trailing" id="Olr-gP-SOc"/>
+                <constraint firstItem="m2O-J8-Tyj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eUy-EW-imz"/>
+                <constraint firstAttribute="bottom" secondItem="m2O-J8-Tyj" secondAttribute="bottom" id="wdu-HT-BVh"/>
+            </constraints>
+            <size key="customSize" width="185" height="163"/>
+            <connections>
+                <outlet property="Name_cnLabel" destination="dqS-WR-qgO" id="9Oq-bp-DBZ"/>
+                <outlet property="imgView" destination="90T-Vo-FQq" id="ZSN-x8-37B"/>
+                <outlet property="name_enLabel" destination="Tlr-Pc-dil" id="JGy-u4-2bi"/>
+            </connections>
+            <point key="canvasLocation" x="596.5" y="499.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="zhanweitu.png" width="68" height="68"/>
+    </resources>
+</document>
